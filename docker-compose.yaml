@@ -1,0 +1,8 @@
+services:
+  trivy_report_server:
+    image: nginx:alpine
+    ports:
+    - 8080:80
+    restart: always
+    volumes:
+    - ./webfiles/:/usr/share/nginx/html/

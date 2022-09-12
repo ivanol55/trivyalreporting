@@ -1,0 +1,2 @@
+webfiles/reports/.*
+!webfiles/reports/latest/.gitkeep

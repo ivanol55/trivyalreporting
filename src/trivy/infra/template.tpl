@@ -58,10 +58,10 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>Infrastructure report for AWS account - {{ now.Format "2006-01-02" }} {{ now.Format "15:04:05" }}</title>
+    <title>Infrastructure report for your AWS account - {{ now.Format "2006-01-02" }} {{ now.Format "15:04:05" }}</title>
   </head>
   <body>
-    <h1>Infrastructure report for AWS account - {{ now.Format "2006-01-02" }} {{ now.Format "15:04:05" }}</h1>
+    <h1>Infrastructure report for your AWS account - {{ now.Format "2006-01-02" }} {{ now.Format "15:04:05" }}</h1>
     <div>
     <table>
     {{- range . }}

@@ -7,8 +7,7 @@ import (
 	"trivyalreporting/src/golang/functions/helpers/generalHelp";
 	"trivyalreporting/src/golang/functions/helpers/manageWebserver";
 	"trivyalreporting/src/golang/functions/infra/infraHelp";
-	"trivyalreporting/src/golang/functions/infra/infraAutoReport";
-	"trivyalreporting/src/golang/functions/infra/infraOnDemandReport";
+	"trivyalreporting/src/golang/functions/infra/generateInfraReport"
 )
 
 func main() {
@@ -27,9 +26,9 @@ func main() {
 		case "help":
 			infraHelp.ShowHelp()
 		case "latest":
-			infraAutoReport.RunReport(os.Args, 6)
+			generateInfraReport.RunReport("latest", os.Args, 6)
 		case "ondemand":
-			infraOnDemandReport.RunReport(os.Args, 6)
+			generateInfraReport.RunReport("ondemand", os.Args, 6)
 		default:
 			infraHelp.ShowHelp()
 		}

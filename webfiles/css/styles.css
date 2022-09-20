@@ -6,6 +6,10 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 .group-header th {
     font-size: 200%;
     padding: 0.5em;
@@ -26,7 +30,8 @@ table, tr, td {
 }
 
 table {
-    margin: 0 auto;
+    margin-bottom: 1em;
+
 }
 
 .severity {
@@ -92,3 +97,13 @@ table tr td:first-of-type {
 a.toggle-more-links {
     cursor: pointer;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+  }

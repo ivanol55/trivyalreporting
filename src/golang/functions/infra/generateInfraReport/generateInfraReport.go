@@ -37,7 +37,7 @@ func RunReport(reportKind string, args []string, requiredCount int) {
 		spliceBlocksIntoReports(datetime, servicesList, severitiesList)
 		fmt.Println("Cleaning up temporary files...")
 		cleanupTempFiles(datetime)
-		fmt.Println("Reports are ready! You can find them available on your webserver at /infra/reports/" + datetime + "/[service]/")
+		fmt.Println("Reports are ready! You can find them available on ./webfiles/infra/reports/" + datetime + "/[service]/")
     }
 }
 

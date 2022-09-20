@@ -16,10 +16,6 @@ func main() {
 	switch os.Args[1] {
 	case "help":
 		generalHelp.ShowHelp()
-	case "start":
-		manageWebserver.StartStopReportsServer("start")
-	case "stop":
-		manageWebserver.StartStopReportsServer("stop")
 	case "infra":
 		requiredArgCount.CheckForArgs(os.Args, 3)
 		switch os.Args[2] {

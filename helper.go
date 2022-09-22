@@ -2,12 +2,11 @@ package main
 
 import (
 	"os"
-	"trivyalreporting/src/golang/functions/helpers/greeting";
-	"trivyalreporting/src/golang/functions/helpers/requiredArgCount";
-	"trivyalreporting/src/golang/functions/helpers/generalHelp";
-	"trivyalreporting/src/golang/functions/helpers/manageWebserver";
-	"trivyalreporting/src/golang/functions/infra/infraHelp";
+	"trivyalreporting/src/golang/functions/helpers/generalHelp"
+	"trivyalreporting/src/golang/functions/helpers/greeting"
+	"trivyalreporting/src/golang/functions/helpers/requiredArgCount"
 	"trivyalreporting/src/golang/functions/infra/generateInfraReport"
+	"trivyalreporting/src/golang/functions/infra/infraHelp"
 )
 
 func main() {
@@ -28,7 +27,6 @@ func main() {
 		default:
 			infraHelp.ShowHelp()
 		}
-
 
 	default:
 		generalHelp.ShowHelp()

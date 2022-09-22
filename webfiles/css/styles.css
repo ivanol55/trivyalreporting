@@ -1,18 +1,19 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: whitesmoke;
 }
 
 h1 {
     text-align: center;
-}
-
-h2 {
-    text-align: center;
+    color: #FF499E;
 }
 
 .group-header th {
     font-size: 200%;
     padding: 0.5em;
+    color: #D264B6;
+    background-color: gainsboro;
 }
 
 .sub-header th {
@@ -21,8 +22,10 @@ h2 {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 3px solid whitesmoke;
     border-collapse: collapse;
+    background-color: darkgray;
+    color: black;
 }
 
 table, tr, td {
@@ -86,23 +89,18 @@ table tr td:first-of-type {
     padding: 1em;
 }
 
-.links a, .links[data-more-links=on] a {
-    display: block;
+td > a {
+    color: #FF499E;
+    background-color: darkgray;
 }
 
-.links[data-more-links=off] a:nth-of-type(1n+5) {
-    display: none;
+td > a:visited {
+    color: #D264B6;
+    background-color: darkgray;
 }
 
 a.toggle-more-links {
     cursor: pointer;
-}
-
-.footer {
-    width: 100%;
-    background-color: lightgray;
-    color: black;
-    text-align: center;
 }
 
 .footer {

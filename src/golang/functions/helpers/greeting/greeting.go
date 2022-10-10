@@ -1,9 +1,12 @@
+// Sets the package name to import from the helper runner
 package greeting
 
+// Imports necessary packages for the function to print text into the terminal
 import (
-	"fmt";
+	"fmt"
 )
 
+// Declares a function that prints a stylized application name and a welcome message
 func ShowGreeting() {
 	fmt.Println("")
 	fmt.Println(" ############################################################################")
@@ -15,7 +18,7 @@ func ShowGreeting() {
 	fmt.Println(" | |_| |  | |\\ V /| |_| | (_| | | | |  __/ |_) | (_) | |  | |_| | | | | (_| |")
 	fmt.Println(" \\__|_|  |_| \\_/  \\__, |\\__,__|_|_|  \\___| .__/ \\___/|_|   \\__|_|_| |_|\\__, | ")
 	fmt.Println(" 		   __/ |                | |                            __/  | ")
-	fmt.Println(" 		  |___/                 |_|                           |____/  ")							   
+	fmt.Println(" 		  |___/                 |_|                           |____/  ")
 	fmt.Println(" ############################################################################")
 	fmt.Println(" ############################################################################")
 	fmt.Println("")

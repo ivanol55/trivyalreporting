@@ -43,7 +43,7 @@ Left to do? Most of the things! Here's a list of stuff we should look into as th
 - [ ] Index generator and updater: every time a report runs, update a "main page" index on `/`, since the s3 backend intented by default cannot list directories
 - [x] CSS styling: let's make **TrivyalReporting** look a bit more **fancy** across the board
 - [x] Establish a report format to make files smaller and easier to explore? Or keep them in a single file for simplicity? Open for discussion, as a large environment can output quite a report.
-- ~~[ ] An option to output and pipe `events` into the desired event management platform (Read: How do we get this into Datadog)~~ discarded, seems out of scope for this tool
+- [x] ~~An option to output and pipe `events` into the desired event management platform (Read: How do we get this into Datadog)~~ discarded, seems out of scope for this tool
 - [x] Priority filtering: on-demand reports may be overwhelming as a first approach, so let's get a way to output only `CRITICAL` or `HIGH` events
 - [ ] Generic click-and-done github actions pipeline for custom reports
 - [x] ~~Is date and time a good format for on-demand reports? Should we let users name the reports in any way?~~ the less user input to control, the better.

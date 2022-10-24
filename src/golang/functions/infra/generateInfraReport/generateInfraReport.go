@@ -17,6 +17,7 @@ import (
 	"os/exec"
 	"strings"
 	"trivyalreporting/src/golang/functions/helpers/datetimeString"
+	"trivyalreporting/src/golang/functions/helpers/generateIndex"
 )
 
 // Main function that runs the reports into HTML format, calls the rest of the helpers in order
@@ -57,6 +58,8 @@ func RunReport(reportKind string, args []string, requiredCount int) {
 		fmt.Println("Cleaning up temporary files...")
 		cleanupTempFiles(datetime)
 		fmt.Println("Reports are ready! You can find them available on ./webfiles/infra/reports/" + datetime + "/[service]/")
+		// Updates the index file for the infrastructure reports reference
+		generateIndex.UpdateIndex("infra")
 	}
 }
 

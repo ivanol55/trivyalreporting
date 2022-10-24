@@ -39,7 +39,7 @@ The entire development environment is dockerized and configured as code in `dock
 
 # I'd like to contribute! What's left to do?
 Left to do? Most of the things! Here's a list of stuff we should look into as this tool evolves, in no order of priority:
-- [ ] ~~Implement the [client-server trivy architecture](https://aquasecurity.github.io/trivy/v0.17.0/modes/client-server/) so it doesn't need to re-download the database every time it runs on a serverless environment~~ discarded due to caching issues
+- [x] ~~Implement the [client-server trivy architecture](https://aquasecurity.github.io/trivy/v0.17.0/modes/client-server/) so it doesn't need to re-download the database every time it runs on a serverless environment~~ discarded due to caching issues
 - [x] Index generator and updater: every time a report runs, update a "main page" index on `/`, since the s3 backend intented by default cannot list directories
 - [x] CSS styling: let's make **TrivyalReporting** look a bit more **fancy** across the board
 - [x] Establish a report format to make files smaller and easier to explore? Or keep them in a single file for simplicity? Open for discussion, as a large environment can output quite a report.

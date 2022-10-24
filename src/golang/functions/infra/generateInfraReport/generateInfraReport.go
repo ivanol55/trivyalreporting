@@ -5,10 +5,12 @@ package generateInfraReport
 // `bytes`: Used to create file buffers and store them as objects
 // `fmt`: Print text into the terminal and run OS commands
 // `io/ioutil`: reads writes files to the system storage
-// `misconfactorial/src/golang/functions/helpers/datetimeString`: Retrieve a datetime string
 // `os`: Run host system tasks like folder creation
 // `os/exec`: Execute host system commands
 // `strings`: String manipulation, here splitting strings into arrays by key character
+// `trivyalreporting/src/golang/functions/helpers/datetimeString`: Retrieve a datetime string
+// `trivyalreporting/src/golang/functions/helpers/generateIndex`: Update the report index after every execution
+
 import (
 	"bytes"
 	"fmt"
